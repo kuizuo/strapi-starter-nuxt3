@@ -2,6 +2,7 @@ import { defineNuxtConfig } from 'nuxt'
 
 export default defineNuxtConfig({
   modules: [
+    '@nuxtjs/strapi',
     '@vueuse/nuxt',
     '@unocss/nuxt',
     '@pinia/nuxt',
@@ -26,5 +27,12 @@ export default defineNuxtConfig({
         config.build.rollupOptions.output.inlineDynamicImports = true
       }
     },
+  },
+  strapi: {
+    url: process.env.STRAPI_URL || 'http://localhost:1337',
+    prefix: '/api',
+    version: 'v4',
+    cookie: {},
+    cookieName: 'strapi_jwt',
   },
 })

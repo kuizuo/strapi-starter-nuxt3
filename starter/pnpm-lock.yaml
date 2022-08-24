@@ -5,6 +5,7 @@ specifiers:
   '@iconify-json/carbon': ^1.1.7
   '@iconify-json/twemoji': ^1.1.5
   '@nuxtjs/color-mode': ^3.1.4
+  '@nuxtjs/strapi': ^1.5.0
   '@pinia/nuxt': ^0.3.1
   '@unocss/nuxt': ^0.45.4
   '@vueuse/nuxt': ^9.1.0
@@ -18,6 +19,7 @@ devDependencies:
   '@iconify-json/carbon': 1.1.7
   '@iconify-json/twemoji': 1.1.5
   '@nuxtjs/color-mode': 3.1.4
+  '@nuxtjs/strapi': 1.5.0
   '@pinia/nuxt': 0.3.1_typescript@4.7.4
   '@unocss/nuxt': 0.45.4
   '@vueuse/nuxt': 9.1.0
@@ -655,7 +657,7 @@ packages:
       knitwork: 0.1.2
       lodash.template: 4.5.0
       mlly: 0.5.5
-      pathe: 0.3.2
+      pathe: 0.3.3
       pkg-types: 0.3.3
       scule: 0.2.1
       semver: 7.3.7
@@ -685,7 +687,7 @@ packages:
       knitwork: 0.1.2
       lodash.template: 4.5.0
       mlly: 0.5.5
-      pathe: 0.3.2
+      pathe: 0.3.3
       pkg-types: 0.3.3
       scule: 0.2.1
       semver: 7.3.7
@@ -708,7 +710,7 @@ packages:
       create-require: 1.1.1
       defu: 6.0.0
       jiti: 1.14.0
-      pathe: 0.3.2
+      pathe: 0.3.3
       postcss-import-resolver: 2.0.0
       scule: 0.2.1
       std-env: 3.1.1
@@ -729,7 +731,7 @@ packages:
       create-require: 1.1.1
       defu: 6.0.0
       jiti: 1.14.0
-      pathe: 0.3.2
+      pathe: 0.3.3
       postcss-import-resolver: 2.0.0
       scule: 0.2.1
       std-env: 3.1.1
@@ -803,7 +805,7 @@ packages:
       magic-string: 0.26.2
       mlly: 0.5.5
       ohash: 0.1.4
-      pathe: 0.3.2
+      pathe: 0.3.3
       perfect-debounce: 0.1.3
       postcss: 8.4.14
       postcss-import: 14.1.0_postcss@8.4.14
@@ -830,6 +832,22 @@ packages:
       '@nuxt/kit': 3.0.0-rc.6
       lodash.template: 4.5.0
       pathe: 0.3.2
+    transitivePeerDependencies:
+      - esbuild
+      - rollup
+      - supports-color
+      - vite
+      - webpack
+    dev: true
+
+  /@nuxtjs/strapi/1.5.0:
+    resolution: {integrity: sha512-akSNmpeRO47wLwkq16mbmMfydX3pehTOfjq9xPkZ+TmnVCoZDytqnrlmRrhgcene+BYu/0ukQMaJs+NndoKevw==}
+    dependencies:
+      '@nuxt/kit': 3.0.0-rc.6
+      defu: 6.0.0
+      graphql: 16.6.0
+      pathe: 0.3.3
+      qs: 6.11.0
     transitivePeerDependencies:
       - esbuild
       - rollup
@@ -1825,7 +1843,7 @@ packages:
       gittar: 0.1.1
       jiti: 1.14.0
       mlly: 0.5.5
-      pathe: 0.3.2
+      pathe: 0.3.3
       rc9: 1.2.2
     dev: true
 
@@ -3152,7 +3170,7 @@ packages:
     dependencies:
       enhanced-resolve: 5.10.0
       mlly: 0.5.5
-      pathe: 0.3.2
+      pathe: 0.3.3
       ufo: 0.8.5
     dev: true
 
@@ -3497,6 +3515,11 @@ packages:
 
   /grapheme-splitter/1.0.4:
     resolution: {integrity: sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==}
+    dev: true
+
+  /graphql/16.6.0:
+    resolution: {integrity: sha512-KPIBPDlW7NxrbT/eh4qPXz5FiFdL5UbaA0XUNz2Rp3Z3hqBSkbj0GVjwFDztsWVauZUWsbKHgMg++sk8UX0bkw==}
+    engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
     dev: true
 
   /gzip-size/6.0.0:
@@ -4363,7 +4386,7 @@ packages:
   /mlly/0.5.5:
     resolution: {integrity: sha512-2R4JT/SxRDPexomw4rmHYY/gWAGmL9Kkq1OR76Ua6w+P340a1aBDTWzKo2kAlxzrG82OdXs5VB9Lmcmyit0Obg==}
     dependencies:
-      pathe: 0.3.2
+      pathe: 0.3.3
       pkg-types: 0.3.3
     dev: true
 
@@ -4448,7 +4471,7 @@ packages:
       node-fetch-native: 0.1.4
       ohash: 0.1.4
       ohmyfetch: 0.4.18
-      pathe: 0.3.2
+      pathe: 0.3.3
       perfect-debounce: 0.1.3
       pkg-types: 0.3.3
       pretty-bytes: 6.0.0
@@ -4966,7 +4989,7 @@ packages:
     dependencies:
       jsonc-parser: 3.1.0
       mlly: 0.5.5
-      pathe: 0.3.2
+      pathe: 0.3.3
     dev: true
 
   /pluralize/8.0.0:
@@ -6203,7 +6226,7 @@ packages:
       defu: 6.0.0
       mime: 3.0.0
       node-fetch-native: 0.1.4
-      pathe: 0.3.2
+      pathe: 0.3.3
     dev: true
 
   /unimport/0.1.9:
@@ -6215,7 +6238,7 @@ packages:
       local-pkg: 0.4.2
       magic-string: 0.26.2
       mlly: 0.5.5
-      pathe: 0.3.2
+      pathe: 0.3.3
       scule: 0.2.1
       unplugin: 0.6.3
     transitivePeerDependencies:
@@ -6234,7 +6257,7 @@ packages:
       local-pkg: 0.4.2
       magic-string: 0.26.2
       mlly: 0.5.5
-      pathe: 0.3.2
+      pathe: 0.3.3
       scule: 0.2.1
       strip-literal: 0.4.0
       unplugin: 0.7.2
@@ -6254,7 +6277,7 @@ packages:
       local-pkg: 0.4.2
       magic-string: 0.26.2
       mlly: 0.5.5
-      pathe: 0.3.2
+      pathe: 0.3.3
       scule: 0.2.1
       strip-literal: 0.4.0
       unplugin: 0.7.2_34lyoy2px4mwvanejqhdojvpg4
@@ -6274,7 +6297,7 @@ packages:
       local-pkg: 0.4.2
       magic-string: 0.26.2
       mlly: 0.5.5
-      pathe: 0.3.2
+      pathe: 0.3.3
       scule: 0.2.1
       strip-literal: 0.4.0
       unplugin: 0.7.2_d4h73tn7q5hdnxjna52dvt6s3u
